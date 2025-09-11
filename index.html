@@ -14,10 +14,10 @@
         body {
             font-family: 'Inter', sans-serif;
         }
-        .skill-card, .project-card, .cert-card, .edu-card, .publication-card {
+        .skill-card, .project-card, .cert-card, .edu-card, .publication-card, .award-card {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        .skill-card:hover, .project-card:hover, .cert-card:hover, .edu-card:hover, .publication-card:hover {
+        .skill-card:hover, .project-card:hover, .cert-card:hover, .edu-card:hover, .publication-card:hover, .award-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
         }
@@ -35,7 +35,9 @@
                 <a href="#projects" class="text-gray-600 hover:text-indigo-600 transition">Projects</a>
                 <a href="#publications" class="text-gray-600 hover:text-indigo-600 transition">Publications</a>
                 <a href="#education" class="text-gray-600 hover:text-indigo-600 transition">Education</a>
-                <a href="#contact" class="bg-indigo-600 text-white px-4 py-2 rounded-full hover:bg-indigo-700 transition">Contact</a>
+                <a href="#certifications" class="text-gray-600 hover:text-indigo-600 transition">Certifications</a>
+                <a href="#awards" class="text-gray-600 hover:text-indigo-600 transition">Awards</a>
+                <a href="#contact" class="text-gray-600 hover:text-indigo-600 transition">Contact</a>
             </div>
             <button id="mobile-menu-button" class="md:hidden text-gray-800">
                 <i class="fas fa-bars text-2xl"></i>
@@ -43,12 +45,14 @@
         </nav>
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
-            <a href="#about" class="block py-2 text-gray-600 hover:text-indigo-600">About</a>
-            <a href="#skills" class="block py-2 text-gray-600 hover:text-indigo-600">Skills</a>
-            <a href="#projects" class="block py-2 text-gray-600 hover:text-indigo-600">Projects</a>
-            <a href="#publications" class="block py-2 text-gray-600 hover:text-indigo-600">Publications</a>
-            <a href="#education" class="block py-2 text-gray-600 hover:text-indigo-600">Education</a>
-            <a href="#contact" class="block mt-2 bg-indigo-600 text-white px-4 py-2 rounded-full text-center hover:bg-indigo-700">Contact</a>
+            <a href="#about" class="text-gray-600 hover:text-indigo-600 transition">About</a>
+            <a href="#skills" class="text-gray-600 hover:text-indigo-600 transition">Skills</a>
+            <a href="#projects" class="text-gray-600 hover:text-indigo-600 transition">Projects</a>
+            <a href="#publications" class="text-gray-600 hover:text-indigo-600 transition">Publications</a>
+            <a href="#education" class="text-gray-600 hover:text-indigo-600 transition">Education</a>
+            <a href="#certifications" class="text-gray-600 hover:text-indigo-600 transition">Certifications</a>
+            <a href="#awards" class="text-gray-600 hover:text-indigo-600 transition">Awards</a>
+            <a href="#contact" class="text-gray-600 hover:text-indigo-600 transition">Contact</a>
         </div>
     </header>
 
@@ -60,7 +64,7 @@
                 <h1 class="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">Gatim Saini</h1>
                 <p class="text-xl text-indigo-600 font-medium mt-2">Aspiring Software Developer & Tech Enthusiast</p>
                 <p class="mt-4 text-lg text-gray-600 max-w-xl">
-                    A dedicated and ambitious student pursuing a Master of Computer Applications (MCA), with a strong foundation in programming, web development, and cybersecurity. Passionate about leveraging technology to solve real-world problems and continuously expanding my skill set.
+                    Dedicated MCA student with a strong foundation in programming, web development, and cybersecurity. Passionate about solving real-world problems with technology and constantly expanding my skills.
                 </p>
             </div>
             <div class="md:w-1/3 mt-10 md:mt-0 flex justify-center">
@@ -74,50 +78,16 @@
         <section id="skills" class="py-20">
             <h2 class="text-3xl font-bold text-center mb-12">My Skills</h2>
             <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
-                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center">
-                    <i class="fab fa-python text-4xl text-indigo-500 mb-3"></i>
-                    <h3 class="font-semibold">Python</h3>
-                </div>
-                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center">
-                    <i class="fas fa-code text-4xl text-indigo-500 mb-3"></i>
-                    <h3 class="font-semibold">C</h3>
-                </div>
-                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center">
-                    <i class="fab fa-html5 text-4xl text-indigo-500 mb-3"></i>
-                    <h3 class="font-semibold">HTML</h3>
-                </div>
-                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center">
-                    <i class="fab fa-css3-alt text-4xl text-indigo-500 mb-3"></i>
-                    <h3 class="font-semibold">CSS</h3>
-                </div>
-                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center">
-                    <i class="fab fa-react text-4xl text-indigo-500 mb-3"></i>
-                    <h3 class="font-semibold">React JS</h3>
-                </div>
-                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center">
-                    <i class="fas fa-database text-4xl text-indigo-500 mb-3"></i>
-                    <h3 class="font-semibold">MySQL</h3>
-                </div>
-                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center">
-                    <i class="fas fa-laptop-code text-4xl text-indigo-500 mb-3"></i>
-                    <h3 class="font-semibold">VS Code</h3>
-                </div>
-                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center">
-                    <i class="fab fa-android text-4xl text-indigo-500 mb-3"></i>
-                    <h3 class="font-semibold">Android Studio</h3>
-                </div>
-                 <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center">
-                    <i class="fas fa-users text-4xl text-indigo-500 mb-3"></i>
-                    <h3 class="font-semibold">Teamwork</h3>
-                </div>
-                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center">
-                    <i class="fas fa-comments text-4xl text-indigo-500 mb-3"></i>
-                    <h3 class="font-semibold">Communication</h3>
-                </div>
-                 <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center">
-                    <i class="fas fa-lightbulb text-4xl text-indigo-500 mb-3"></i>
-                    <h3 class="font-semibold">Problem Solving</h3>
-                </div>
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center"><i class="fab fa-python text-4xl text-indigo-500 mb-3"></i><h3 class="font-semibold">Python</h3></div>
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center"><i class="fas fa-code text-4xl text-indigo-500 mb-3"></i><h3 class="font-semibold">C</h3></div>
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center"><i class="fab fa-html5 text-4xl text-indigo-500 mb-3"></i><h3 class="font-semibold">HTML</h3></div>
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center"><i class="fab fa-css3-alt text-4xl text-indigo-500 mb-3"></i><h3 class="font-semibold">CSS</h3></div>
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center"><i class="fab fa-react text-4xl text-indigo-500 mb-3"></i><h3 class="font-semibold">React JS</h3></div>
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center"><i class="fas fa-database text-4xl text-indigo-500 mb-3"></i><h3 class="font-semibold">MySQL</h3></div>
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center"><i class="fas fa-laptop-code text-4xl text-indigo-500 mb-3"></i><h3 class="font-semibold">Visual Studio Code</h3></div>
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center"><i class="fab fa-android text-4xl text-indigo-500 mb-3"></i><h3 class="font-semibold">Android Studio</h3></div>
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center"><i class="fas fa-users text-4xl text-indigo-500 mb-3"></i><h3 class="font-semibold">Teamwork</h3></div>
+                <div class="skill-card bg-white p-6 rounded-lg shadow-md text-center"><i class="fas fa-comments text-4xl text-indigo-500 mb-3"></i><h3 class="font-semibold">Communication</h3></div>
             </div>
         </section>
 
@@ -133,10 +103,11 @@
                 <div class="project-card bg-white p-6 rounded-lg shadow-md">
                     <h3 class="text-xl font-bold mb-2">THE CLOCKWORK MANOR</h3>
                     <p class="text-gray-600 mb-4">A game that features a countdown timer, keyboard-controlled character navigation and dynamically spawning mission points on a stylized map.</p>
+                    <a href="https://github.com/Gatim211015003/time-loop-chronicles" target="_blank" class="text-indigo-600 hover:underline font-semibold">View Project <i class="fas fa-arrow-right ml-1"></i></a>
                 </div>
             </div>
         </section>
-        
+
         <!-- Publications Section -->
         <section id="publications" class="py-20">
             <h2 class="text-3xl font-bold text-center mb-12">Publications</h2>
@@ -149,22 +120,21 @@
                 <div class="publication-card bg-white p-6 rounded-lg shadow-md">
                     <h3 class="text-xl font-bold mb-2">Research paper on "Metaverse with Artificial Intelligence"</h3>
                     <p class="text-gray-600 mb-4">Published in INDIACom-2025 NSC Proceedings.</p>
-                     <a href="https://bvicam.in/INDIACom/news/NSC%202025%20Proceedings/Main/index.html" target="_blank" class="text-indigo-600 hover:underline font-semibold">Read Paper <i class="fas fa-external-link-alt ml-1"></i></a>
+                    <a href="https://bvicam.in/INDIACom/news/NSC%202025%20Proceedings/Main/index.html" target="_blank" class="text-indigo-600 hover:underline font-semibold">Read Paper <i class="fas fa-external-link-alt ml-1"></i></a>
                 </div>
             </div>
         </section>
 
-
         <!-- Education Section -->
         <section id="education" class="py-20 bg-gray-100 -mx-6 px-6">
-            <h2 class="text-3xl font-bold text-center mb-12">Education & Achievements</h2>
+            <h2 class="text-3xl font-bold text-center mb-12">Education</h2>
             <div class="space-y-8 max-w-4xl mx-auto">
                 <div class="edu-card bg-white p-6 rounded-lg shadow-md flex items-start space-x-4">
                     <div class="bg-indigo-100 text-indigo-600 p-3 rounded-full"><i class="fas fa-graduation-cap"></i></div>
                     <div>
                         <p class="font-bold text-lg">Master of Computer Applications (MCA)</p>
                         <p class="text-gray-600">Bharati Vidyapeeth's Institute of Computer Applications and Management (BVICAM)</p>
-                        <p class="text-sm text-gray-500">August 2024 - Present | 8.7 CGPA (till 2nd Sem)</p>
+                        <p class="text-sm text-gray-500">August 2024 - Present | 86.78% (till 2nd Sem)</p>
                     </div>
                 </div>
                 <div class="edu-card bg-white p-6 rounded-lg shadow-md flex items-start space-x-4">
@@ -172,14 +142,23 @@
                     <div>
                         <p class="font-bold text-lg">Bachelor of Computer Applications (BCA)</p>
                         <p class="text-gray-600">Manipal University Jaipur</p>
-                        <p class="text-sm text-gray-500">October 2021 - May 2024 | 8.89 CGPA</p>
+                        <p class="text-sm text-gray-500">October 2021 - May 2024 | 88.9%</p>
                     </div>
                 </div>
-                 <div class="edu-card bg-white p-6 rounded-lg shadow-md flex items-start space-x-4">
-                    <div class="bg-indigo-100 text-indigo-600 p-3 rounded-full"><i class="fas fa-award"></i></div>
+                <div class="edu-card bg-white p-6 rounded-lg shadow-md flex items-start space-x-4">
+                    <div class="bg-indigo-100 text-indigo-600 p-3 rounded-full"><i class="fas fa-school"></i></div>
                     <div>
-                        <p class="font-bold text-lg">Academic Achievements</p>
-                        <p class="text-gray-600">Maintained high academic standing (CGPA 8.4+) and received multiple Scholar Badges from 5th to 10th grade, including a Super Scholar distinction.</p>
+                        <p class="font-bold text-lg">Class XII</p>
+                        <p class="text-gray-600">K.R. Mangalam World School</p>
+                        <p class="text-sm text-gray-500">March 2020 - March 2021 | 89.2%</p>
+                    </div>
+                </div>
+                <div class="edu-card bg-white p-6 rounded-lg shadow-md flex items-start space-x-4">
+                    <div class="bg-indigo-100 text-indigo-600 p-3 rounded-full"><i class="fas fa-school"></i></div>
+                    <div>
+                        <p class="font-bold text-lg">Class X</p>
+                        <p class="text-gray-600">K.R. Mangalam World School</p>
+                        <p class="text-sm text-gray-500">March 2018 - March 2019 | 89.5%</p>
                     </div>
                 </div>
             </div>
@@ -187,57 +166,235 @@
 
         <!-- Certifications Section -->
         <section id="certifications" class="py-20">
-            <h2 class="text-3xl font-bold text-center mb-12">Certifications</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                 <div class="cert-card bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="font-semibold mb-1">Google Cybersecurity Specialization</h3>
-                    <p class="text-sm text-gray-500">Google - Coursera</p>
-                </div>
-                 <div class="cert-card bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="font-semibold mb-1">Core Java Specialization</h3>
-                    <p class="text-sm text-gray-500">LearnQuest - Coursera</p>
-                </div>
-                <div class="cert-card bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="font-semibold mb-1">Visual Elements Of User Interface Design</h3>
-                    <p class="text-sm text-gray-500">California Institute Of The Arts - Coursera</p>
-                </div>
-                <div class="cert-card bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="font-semibold mb-1">UX Design Fundamentals</h3>
-                    <p class="text-sm text-gray-500">California Institute Of The Arts - Coursera</p>
-                </div>
-                <div class="cert-card bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="font-semibold mb-1">What Is The Metaverse?</h3>
-                    <p class="text-sm text-gray-500">Meta - Coursera</p>
-                </div>
-                 <div class="cert-card bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="font-semibold mb-1">C For Everyone: Programming Fundamentals</h3>
-                    <p class="text-sm text-gray-500">University of California, Santa Cruz - Coursera</p>
-                </div>
-            </div>
-             <div class="text-center mt-8">
-                <p class="text-gray-600">... and many more covering security, design, and data analysis.</p>
-            </div>
-        </section>
+        <h2 class="text-3xl font-bold text-center mb-12">Certifications</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-        <!-- Contact Section -->
-        <section id="contact" class="py-20 bg-gray-100 -mx-6 px-6">
-            <div class="text-center">
-                <h2 class="text-3xl font-bold">Get In Touch</h2>
-                <p class="text-gray-600 mt-2">I'm always open to discussing new projects, creative ideas, or opportunities to be part of an amazing team.</p>
-                <div class="mt-8 flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
-                    <a href="mailto:gatimsaini@gmail.com" class="flex items-center text-lg text-gray-700 hover:text-indigo-600 transition">
-                        <i class="fas fa-envelope mr-3"></i>
-                        <span>gatimsaini@gmail.com</span>
-                    </a>
-                    <a href="tel:+919810228029" class="flex items-center text-lg text-gray-700 hover:text-indigo-600 transition">
-                        <i class="fas fa-phone mr-3"></i>
-                        <span>+91 98102 28029</span>
-                    </a>
+        <div class="cert-card bg-white p-6 rounded-lg shadow-md">
+            <a href="https://www.coursera.org/account/accomplishments/specialization/4BJC6Z6NN5V7" target="_blank" class="font-semibold text-indigo-600 hover:underline">Google Cybersecurity Specialization</a>
+            <p class="text-sm text-gray-500">Google - Coursera</p>
+        </div>
+
+        <div class="cert-card bg-white p-6 rounded-lg shadow-md">
+            <a href="https://www.coursera.org/account/accomplishments/verify/2PHXUYH9GW3F" target="_blank" class="font-semibold text-indigo-600 hover:underline">Fundamentals Of Data Warehousing</a>
+            <p class="text-sm text-gray-500">LearnQuest - Coursera</p>
+        </div>
+
+        <div class="cert-card bg-white p-6 rounded-lg shadow-md">
+            <a href="https://www.coursera.org/account/accomplishments/verify/N4DNFJEALBCD" target="_blank" class="font-semibold text-indigo-600 hover:underline">Visual Elements Of User Interface Design</a>
+            <p class="text-sm text-gray-500">California Institute Of The Arts - Coursera</p>
+        </div>
+
+        <div class="cert-card bg-white p-6 rounded-lg shadow-md">
+            <a href="https://www.coursera.org/account/accomplishments/verify/DVQ99S3RBUE7" target="_blank" class="font-semibold text-indigo-600 hover:underline">UX Design Fundamentals</a>
+            <p class="text-sm text-gray-500">California Institute Of The Arts - Coursera</p>
+        </div>
+
+        <div class="cert-card bg-white p-6 rounded-lg shadow-md">
+            <a href="https://www.coursera.org/account/accomplishments/verify/MYWXE62ZCUR2" target="_blank" class="font-semibold text-indigo-600 hover:underline">Web Design: Strategy And Information Architecture</a>
+            <p class="text-sm text-gray-500">California Institute Of The Arts - Coursera</p>
+        </div>
+
+        <div class="cert-card bg-white p-6 rounded-lg shadow-md">
+            <a href="https://www.coursera.org/account/accomplishments/verify/AV844ERZWSL2" target="_blank" class="font-semibold text-indigo-600 hover:underline">Usable Security</a>
+            <p class="text-sm text-gray-500">University Of Maryland - Coursera</p>
+        </div>
+
+        <div class="cert-card bg-white p-6 rounded-lg shadow-md">
+            <a href="https://www.coursera.org/account/accomplishments/verify/LMAMX84S2UQH" target="_blank" class="font-semibold text-indigo-600 hover:underline">What Is The Metaverse?</a>
+            <p class="text-sm text-gray-500">Meta - Coursera</p>
+        </div>
+
+        <div class="cert-card bg-white p-6 rounded-lg shadow-md">
+            <a href="https://www.coursera.org/account/accomplishments/verify/RKTSKBMCS6G4" target="_blank" class="font-semibold text-indigo-600 hover:underline">Java Class Library</a>
+            <p class="text-sm text-gray-500">LearnQuest - Coursera</p>
+        </div>
+
+        <div class="cert-card bg-white p-6 rounded-lg shadow-md">
+            <a href="https://www.coursera.org/account/accomplishments/verify/3XBTCCQWWYZS" target="_blank" class="font-semibold text-indigo-600 hover:underline">Object-Oriented Hierarchies In Java</a>
+            <p class="text-sm text-gray-500">LearnQuest - Coursera</p>
+        </div>
+
+        <div class="cert-card bg-white p-6 rounded-lg shadow-md">
+            <a href="https://www.coursera.org/account/accomplishments/verify/CQHJRQYK62FL" target="_blank" class="font-semibold text-indigo-600 hover:underline">Introduction To Object-Oriented Programming With Java</a>
+            <p class="text-sm text-gray-500">LearnQuest - Coursera</p>
+        </div>
+
+        <div class="cert-card bg-white p-6 rounded-lg shadow-md">
+            <a href="https://www.coursera.org/account/accomplishments/verify/KCS8AJY8WSRF" target="_blank" class="font-semibold text-indigo-600 hover:underline">Introduction To Java</a>
+            <p class="text-sm text-gray-500">LearnQuest - Coursera</p>
+        </div>
+
+        <div class="cert-card bg-white p-6 rounded-lg shadow-md">
+            <a href="https://www.coursera.org/account/accomplishments/verify/9A3RWG7GDVR6" target="_blank" class="font-semibold text-indigo-600 hover:underline">C For Everyone: Programming Fundamentals</a>
+            <p class="text-sm text-gray-500">University of California, Santa Cruz - Coursera</p>
+        </div>
+
+        <div class="cert-card bg-white p-6 rounded-lg shadow-md">
+            <a href="https://www.coursera.org/account/accomplishments/verify/LBL7JRH679D6" target="_blank" class="font-semibold text-indigo-600 hover:underline">Automate Cybersecurity Tasks with Python</a>
+            <p class="text-sm text-gray-500">Google - Coursera</p>
+        </div>
+
+        <div class="cert-card bg-white p-6 rounded-lg shadow-md">
+            <a href="https://www.coursera.org/account/accomplishments/verify/G9FZZJ29BVGB" target="_blank" class="font-semibold text-indigo-600 hover:underline">Tools of the Trade: Linux and SQL</a>
+            <p class="text-sm text-gray-500">Google - Coursera</p>
+        </div>
+
+        <div class="cert-card bg-white p-6 rounded-lg shadow-md">
+            <a href="https://www.coursera.org/account/accomplishments/verify/C8JBC44APXLR" target="_blank" class="font-semibold text-indigo-600 hover:underline">Foundations of Cybersecurity</a>
+            <p class="text-sm text-gray-500">Google - Coursera</p>
+        </div>
+
+        <div class="cert-card bg-white p-6 rounded-lg shadow-md">
+            <a href="https://www.coursera.org/account/accomplishments/verify/QVRL94ZC45Q6" target="_blank" class="font-semibold text-indigo-600 hover:underline">Sound the Alarm: Detection and Response</a>
+            <p class="text-sm text-gray-500">Google - Coursera</p>
+        </div>
+
+        <div class="cert-card bg-white p-6 rounded-lg shadow-md">
+            <a href="https://www.coursera.org/account/accomplishments/verify/BRXRXMTVEWHU" target="_blank" class="font-semibold text-indigo-600 hover:underline">Assets, Threats, and Vulnerabilities</a>
+            <p class="text-sm text-gray-500">Google - Coursera</p>
+        </div>
+
+        <div class="cert-card bg-white p-6 rounded-lg shadow-md">
+            <a href="https://www.coursera.org/account/accomplishments/verify/PVC6CYBYYRZ9" target="_blank" class="font-semibold text-indigo-600 hover:underline">Play It Safe: Manage Security Risks</a>
+            <p class="text-sm text-gray-500">Google - Coursera</p>
+        </div>
+
+        <div class="cert-card bg-white p-6 rounded-lg shadow-md">
+            <a href="https://www.coursera.org/account/accomplishments/verify/2W3KB2ETZHX7" target="_blank" class="font-semibold text-indigo-600 hover:underline">Connect and Protect: Networks and Network Security</a>
+            <p class="text-sm text-gray-500">Google - Coursera</p>
+        </div>
+
+        <div class="cert-card bg-white p-6 rounded-lg shadow-md">
+            <a href="https://www.coursera.org/account/accomplishments/verify/XGTUJ3EMVJEN" target="_blank" class="font-semibold text-indigo-600 hover:underline">Put It to Work: Prepare for Cybersecurity Jobs</a>
+            <p class="text-sm text-gray-500">Google - Coursera</p>
+        </div>
+
+        <div class="cert-card bg-white p-6 rounded-lg shadow-md">
+            <a href="https://www.coursera.org/account/accomplishments/specialization/HLGB88AMD66P" target="_blank" class="font-semibold text-indigo-600 hover:underline">Core Java Specialization</a>
+            <p class="text-sm text-gray-500">LearnQuest - Coursera</p>
+        </div>
+
+        <div class="cert-card bg-white p-6 rounded-lg shadow-md">
+            <a href="https://www.coursera.org/account/accomplishments/verify/BJUAG7CEECFZ" target="_blank" class="font-semibold text-indigo-600 hover:underline">Basic Elements of Design: Design Principles</a>
+            <p class="text-sm text-gray-500">University of Colorado Boulder - Coursera</p>
+        </div>
+
+        <div class="cert-card bg-white p-6 rounded-lg shadow-md">
+            <a href="https://www.coursera.org/account/accomplishments/verify/TARWNMFWXCT7" target="_blank" class="font-semibold text-indigo-600 hover:underline">Graphic Elements of Design: Color Theory</a>
+            <p class="text-sm text-gray-500">University of Colorado Boulder - Coursera</p>
+        </div>
+
+        <div class="cert-card bg-white p-6 rounded-lg shadow-md">
+            <a href="https://www.coursera.org/account/accomplishments/verify/D3KNM2CDQNNS" target="_blank" class="font-semibold text-indigo-600 hover:underline">Textual Elements of Design: Fonts & Typography</a>
+            <p class="text-sm text-gray-500">University of Colorado Boulder - Coursera</p>
+        </div>
+
+        <div class="cert-card bg-white p-6 rounded-lg shadow-md">
+            <a href="https://www.coursera.org/account/accomplishments/verify/8G94JZJRABEB" target="_blank" class="font-semibold text-indigo-600 hover:underline">Print and Digital Elements of Design: Branding & UX</a>
+            <p class="text-sm text-gray-500">University of Colorado Boulder - Coursera</p>
+        </div>
+
+        <div class="cert-card bg-white p-6 rounded-lg shadow-md">
+            <a href="https://www.coursera.org/account/accomplishments/verify/8FUSS4WQE9LZ" target="_blank" class="font-semibold text-indigo-600 hover:underline">Exploratory Data Analysis for Machine Learning</a>
+            <p class="text-sm text-gray-500">IBM - Coursera</p>
+        </div>
+
+        <div class="cert-card bg-white p-6 rounded-lg shadow-md">
+            <a href="https://drive.google.com/file/d/1evx4Wfe48gl7RihstTERXOk7A2kLnK0n/view?usp=sharing" target="_blank" class="font-semibold text-indigo-600 hover:underline">Trending Technologies of 2024</a>
+        </div>
+
+        <div class="cert-card bg-white p-6 rounded-lg shadow-md">
+            <a href="https://drive.google.com/file/d/1nGVYQUrCSdtQl7bILWAxaRE9rd5CQx4R/view?usp=sharing" target="_blank" class="font-semibold text-indigo-600 hover:underline">Software Defined Vehicles (SDV)</a>
+        </div>
+
+        <div class="cert-card bg-white p-6 rounded-lg shadow-md">
+            <a href="https://drive.google.com/file/d/1VwtJI5bp8p50qx8EV4TYIqYgjC15f5TY/view?usp=sharing" target="_blank" class="font-semibold text-indigo-600 hover:underline">AI Tools in Software Development for Productivity Improvement</a>
+        </div>
+
+        <div class="cert-card bg-white p-6 rounded-lg shadow-md">
+            <a href="https://drive.google.com/file/d/1-zOoGC_Y7XldMK4goe-8xTsIw6akvc5T/view?usp=sharing" target="_blank" class="font-semibold text-indigo-600 hover:underline">The Power of Storytelling: Enhancing Communication and Innovation Across Careers</a>
+        </div>
+        </div>
+        <div class="text-center mt-8">
+            <p class="text-gray-600">... and many more covering security, design, and data analysis.</p>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards" class="py-20 bg-gray-100 -mx-6 px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">Awards</h2>
+        <div class="space-y-8 max-w-4xl mx-auto">
+            <div class="award-card bg-white p-6 rounded-lg shadow-md flex items-start space-x-4">
+                <div class="bg-indigo-100 text-indigo-600 p-3 rounded-full"><i class="fas fa-award"></i></div>
+                <div>
+                    <p class="font-bold text-lg">Scholar Badge - Class 5</p>
+                    <p class="text-gray-600">K.R. Mangalam World School</p>
                 </div>
             </div>
-        </section>
+            <div class="award-card bg-white p-6 rounded-lg shadow-md flex items-start space-x-4">
+                <div class="bg-indigo-100 text-indigo-600 p-3 rounded-full"><i class="fas fa-award"></i></div>
+                <div>
+                    <p class="font-bold text-lg">Scholar Badge - Class 6</p>
+                    <p class="text-gray-600">K.R. Mangalam World School</p>
+                </div>
+            </div>
+            <div class="award-card bg-white p-6 rounded-lg shadow-md flex items-start space-x-4">
+                <div class="bg-indigo-100 text-indigo-600 p-3 rounded-full"><i class="fas fa-award"></i></div>
+                <div>
+                    <p class="font-bold text-lg">Scholar Badge - Class 7</p>
+                    <p class="text-gray-600">K.R. Mangalam World School</p>
+                </div>
+            </div>
+            <div class="award-card bg-white p-6 rounded-lg shadow-md flex items-start space-x-4">
+                <div class="bg-indigo-100 text-indigo-600 p-3 rounded-full"><i class="fas fa-star"></i></div>
+                <div>
+                    <p class="font-bold text-lg">Super Scholar Badge (Classes 5-7)</p>
+                    <p class="text-gray-600">K.R. Mangalam World School</p>
+                </div>
+            </div>
+            <div class="award-card bg-white p-6 rounded-lg shadow-md flex items-start space-x-4">
+                <div class="bg-indigo-100 text-indigo-600 p-3 rounded-full"><i class="fas fa-award"></i></div>
+                <div>
+                    <p class="font-bold text-lg">Scholar Badge - Class 8</p>
+                    <p class="text-gray-600">K.R. Mangalam World School</p>
+                </div>
+            </div>
+            <div class="award-card bg-white p-6 rounded-lg shadow-md flex items-start space-x-4">
+                <div class="bg-indigo-100 text-indigo-600 p-3 rounded-full"><i class="fas fa-award"></i></div>
+                <div>
+                    <p class="font-bold text-lg">Scholar Badge - Class 10</p>
+                    <p class="text-gray-600">K.R. Mangalam World School</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    </main>
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="text-center">
+            <h2 class="text-3xl font-bold">Get In Touch</h2>
+            <p class="text-gray-600 mt-2">I'm always open to discussing new projects, creative ideas, or opportunities to be part of an amazing team.</p>
+            <div class="mt-8 flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
+                <a href="mailto:gatimsaini@gmail.com" class="flex items-center text-lg text-gray-700 hover:text-indigo-600 transition">
+                    <i class="fas fa-envelope mr-3"></i>
+                    <span>gatimsaini@gmail.com</span>
+                </a>
+                <a href="tel:+919810228029" class="flex items-center text-lg text-gray-700 hover:text-indigo-600 transition">
+                    <i class="fas fa-phone mr-3"></i>
+                    <span>+91 98102 28029, +91 98105 28029</span>
+                </a>
+                <a href="https://www.linkedin.com/in/gatim-saini-5842b62a5" target="_blank" class="flex items-center text-lg text-gray-700 hover:text-indigo-600 transition">
+                    <i class="fab fa-linkedin mr-3"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/Gatim211015003" target="_blank" class="flex items-center text-lg text-gray-700 hover:text-indigo-600 transition">
+                    <i class="fab fa-github mr-3"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
 
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-6">
@@ -246,22 +403,7 @@
         </div>
     </footer>
 
-    <script>
-        // --- Mobile Menu Logic ---
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
-        for (let link of mobileMenuLinks) {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-            });
-        }
-    </script>
-
+    <script src="script.js"></script>
+    
 </body>
 </html>
